@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url('futurism-perspective-digital-nomads-lifestyle.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #ff7f50;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f50;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+.benefits, .testimonials {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.benefits h2, .testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #ff7f50;
+}
+
+.benefits ul li::before {
+    content: '✔';
+    color: #28a745;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.testimonials .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial::before {
+    content: '“';
+    font-size: 2em;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #ff7f50;
+}
+
+.testimonials .testimonial::after {
+    content: '”';
+    font-size: 2em;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: #ff7f50;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
